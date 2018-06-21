@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/el-lib.css">
+    <link rel="stylesheet" href="css/el-lib.min.css">
+    <link rel="stylesheet" href="css/fab-style.css" type="text/css">
+
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/el-lib.js"></script>
+    <script src="js/el-lib.min.js"></script>
+    <script src="js/el-lib-2.min.js"></script>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img/logo.png");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img/gedung.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img/fakultas.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+}
+
+/*modal login Admin*/
+.modal-login {    
+    color: #636363;
+    width: 350px;
+  }
+  .modal-login .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  .modal-login .modal-header {
+    border-bottom: none;   
+        position: relative;
+        justify-content: center;
+  }
+  .modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+  }
+  .modal-login .form-control:focus {
+    border-color: #FBC912;
+  }
+  .modal-login .form-control, .modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px; 
+  }
+  .modal-login .close {
+        position: absolute;
+    top: -5px;
+    right: -5px;
+  } 
+  .modal-login .modal-footer {
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+        justify-content: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .modal-login .modal-footer a {
+    color: #999;
+  }   
+  .modal-login .avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #FBC912;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .modal-login .avatar img {
+    width: 100%;
+  }
+  .modal-login.modal-dialog {
+    margin-top: 80px;
+  }
+    .modal-login .btn {
+        color: #fff;
+        border-radius: 4px;
+    background: #FBC912;
+    text-decoration: none;
+    transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+  .modal-login .btn:hover, .modal-login .btn:focus {
+    background: #45aba6;
+    outline: none;
+  }
+  .trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">SELAMAT DATANG</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Kuliah ? BSI AJA !</h3>
+  <p>Hai kamu ! Ya kamu ! Kuliah ? BSI AJA !</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Dimana BSI ?</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Jalan Sekolah Internasional no.1-6 Antapani, Cicaheum, Kiaracondong, Kota Bandung, Jawa Barat 40291</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Tentang Kami</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Kami menyiapkan para sarjana muda agar siap kerja !</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <a href="#MLogin" class="btn" data-toggle="modal">
+    <span class="border">ANDA DOSEN ?</span>
+  </a>
+  </div>
+</div>
+
+<div id="MLogin" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="avatar">
+          <img src="img/logo.png" alt="Avatar">
+        </div>        
+        <h4 class="modal-title">Is that u DAD ?</h4> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="#" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Tell Me !" required="required">   
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="If is that U !" required="required"> 
+          </div>        
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary btn-lg btn-block login-btn" value="It's ME my SON" name="login">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#">U'r not MY DAD !! GET OUT</a>
+      </div>
+    </div>
+  </div>
+</div>     
+
+
+</body></html>
